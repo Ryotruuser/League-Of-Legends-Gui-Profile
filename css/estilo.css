@@ -1,9 +1,15 @@
+@import url('github.com/ryotruuser');
+@import url('snippet.thisSite.hasDevBy=?:ryo:?user:tru=developing.com');
+@import url('this.css')
+@import url(//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold);
 body{
 	background: lightblue;
+	font-family: "BeaufortforLOL-Bold", serif;
+	font-weight: bold;
 }
 .container{
   display: grid;
-  padding: 2em;
+  padding: 3em;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 10vh 70vh 10vh;
   grid-template-areas:"header header"
@@ -11,11 +17,40 @@ body{
 }
 .header{
 	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	background: rgb(4,10,18);
 	background: linear-gradient(180deg, rgba(4,10,18,1) 0%, rgba(14,12,19,0.94) 100%);
 	border-bottom: 1px solid #3d4142;
 }
+.btn-jogar{
+	padding: 1em;
+	margin: 1em;
+	width: 9em;
+	color: #afa37e;
+	background: lightgray;
+}
+.btn-info{
+	padding: 0.5em;
+	width: 2.5em;
+	border-radius: 50%;
+}
+.title-menu{
+	display: flex;
+	flex-direction: row;
+	margin: 1em;
+}
+.main-title{
+	color: #afa37e;
+	margin: 0.5em;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.main-title:hover{
+	color: #b9ad8a;
 
+}
 .main-container{
 	grid-area: main;
 	background-image: url("../pics/teste.jpg");
@@ -26,12 +61,18 @@ body{
 }
 .nav{
 	padding: 0.5em;
+	margin: 0 0 0 2em;
 }
 .links{
 	text-decoration: none;
 	color: #d9d2c1;
 	margin: 0 0 0 20px;
-
+	font-size: 0.8em;
+}
+.links:hover{
+	color: #e5dfd2;
+	border-bottom-width: 0.5em;
+	border-bottom: 1px solid rgba(188, 176, 136, 0.4);
 }
 .side-bar{
 	grid-area: aside;
