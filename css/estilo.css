@@ -24,6 +24,9 @@ body{
 	background: linear-gradient(180deg, rgba(4,10,18,1) 0%, rgba(14,12,19,0.94) 100%);
 	border-bottom: 1px solid #3d4142;
 }
+.btn-menu{
+	margin-left: 2em;
+}
 .btn-jogar{
 	padding: 1em;
 	margin: 1em;
@@ -39,17 +42,88 @@ body{
 .title-menu{
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	margin: 1em;
+}
+.box-title{
+	display: flex;
+	height: 5.5em;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.box-title:hover > .main-title{
+	color: #b9ad8a;
+}
+.box-title:hover{
+	background: rgb(199,186,142);
+	background: linear-gradient(0deg, rgba(199,186,142,0.2) 0%, rgba(51,59,64,0) 65%);
 }
 .main-title{
 	color: #afa37e;
-	margin: 0.5em;
-	font-size: 1.5em;
-	cursor: pointer;
+	font-size: 1.3em;
 }
-.main-title:hover{
-	color: #b9ad8a;
-
+.box-icons{
+	display: flex;
+	cursor: pointer;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.box-icons:hover{
+	background: rgb(199,186,142);
+	background: linear-gradient(0deg, rgba(199,186,142,0.2) 0%, rgba(51,59,64,0) 65%);
+}
+.icons-menu{
+	height: 100%;
+	width: 20em;
+	margin-left: 4em;
+	display: flex;
+	align-items: center;
+}
+.icons{
+	width: 2em;
+	margin:0 1em;
+}
+.line{
+	margin-left: 1em;
+	height: 100%;
+	width: 0.11em;
+	background: rgb(199,186,142);
+	background: radial-gradient(circle, rgba(199,186,142,1) 0%, rgba(51,59,64,0) 65%);
+}
+.currency-money{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: 5em;
+	margin-left: 1em;
+}
+.money-status{
+	display: flex;
+	flex-direction: row;
+	color: white;
+	margin-top: 0.5em;
+}
+.rpcurrency-icons{
+	width: 50%;
+	height: 50%;
+	height: 2em;
+	margin-left: 2%;
+}
+.eacurrency-icons{
+	width: 20%;
+	margin-left: 12%;
+	
+}
+.rp-currency{
+	font-size: 0.8em;
+	margin-top: 12%;
+}
+.ea-currency{
+	font-size: 0.8em;
+	margin: 5%;
 }
 .main-container{
 	grid-area: main;
